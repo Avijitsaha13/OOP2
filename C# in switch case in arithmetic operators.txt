@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int value1;
+            Console.WriteLine("Enter the value");
+            value1=Convert.ToInt32(Console.ReadLine());
+            int value2;
+            Console.WriteLine("Enter the value");
+            value2= Convert.ToInt32(Console.ReadLine());
+            string op;
+            Console.WriteLine("Enter the oparator");
+            op = Console.ReadLine();
+
+            switch (op)
+            {
+                case "+":
+                    Console.WriteLine(value1+value2);
+                    break;
+                case "-":
+                    Console.WriteLine(value1-value2);
+                    break;
+                case "*":
+                    Console.WriteLine(value1*value2);
+                    break;
+                case "/":
+                    Console.WriteLine(value1/value2);
+                    break;
+             
+                default:
+                    Console.WriteLine("Invalid");
+                    break;
+            }
+            Console.ReadLine();
+          
+        }
+    }
+}
