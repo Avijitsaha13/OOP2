@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int name;
+            Console.WriteLine("what is your name?");
+            name=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("My name is "+name);
+            int day = 4;
+            switch(day)
+            {
+                case 1:
+                    Console.WriteLine("Today is Sunday");
+                    break;
+                case 2:
+                    Console.WriteLine("Today is Monday");
+                    break;
+                case 3:
+                    Console.WriteLine("Today is Tuesday");
+                    break;
+                case 4:
+                    Console.WriteLine("Today is wednesday");
+                    break;
+                case 5:
+                    Console.WriteLine("Today is thursday");
+                    break;
+                case 6:
+                    Console.WriteLine("Today is friday");
+                    break;
+                default:
+                    Console.WriteLine("Invalid command");
+                    break;
+            }
+            Console.ReadLine();
+          
+        }
+    }
+}
